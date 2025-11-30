@@ -73,3 +73,56 @@ Inclui ao menos:
 - 3 comandos `DELETE` com condições  
 
 ---
+
+## Como Executar
+
+1. Instalar o SQLite (caso não tenha)
+
+  '''- Linux (Ubuntu/Debian): sudo apt install sqlite3'''
+
+  '''- Windows: baixar o executável em https://www.sqlite.org/download.html'''
+
+ ''' - macOS: brew install sqlite'''
+
+2. Acessar a pasta do projeto
+
+  Entre no diretório onde estão os arquivos:
+  
+  - cd biblioteca-db
+
+3. Criar o banco de dados no SQLite
+
+  Digite no terminal:
+  
+ ''' - sqlite3 biblioteca.db'''
+  
+  Isso abrirá o console do SQLite e criará o arquivo do banco.
+
+4. Executar o script de criação das tabelas
+
+  Dentro do SQLite, rode:
+
+  '''.read sql/create.sql'''
+
+5. Inserir os dados iniciais
+
+  Ainda no SQLite, rode:
+
+  '''.read sql/insert.sql'''
+
+6. Executar as consultas de exemplo
+
+  '''.read sql/select.sql'''
+
+7. Executar os comandos de UPDATE e DELETE
+  
+  '''.read sql/update_delete.sql'''
+
+8. Para reconstruir:
+
+  ''' - .read sql/create.sql'''
+  .read sql/insert.sql'''
+
+9. Sair do SQLite
+
+'''.exit'''
